@@ -1,7 +1,8 @@
+import React from "react";
+
 const Table = ({ sat }) => {             {/* start with sat prop*/}
   return (
     <div>
-      {/*<h2>Orbit Report for Satellite: {sat.name}</h2>*/}
       <table>
        <thead>
         <tr>
@@ -12,7 +13,7 @@ const Table = ({ sat }) => {             {/* start with sat prop*/}
         </tr>
         </thead>
       <tbody>
-        {sat.map((data) => (
+        {sat.map((data, id) => (
             <tr key={data.id}>
               <td>{data.name}</td>
               <td>{data.type}</td>
